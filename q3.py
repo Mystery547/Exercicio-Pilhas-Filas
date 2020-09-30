@@ -150,7 +150,12 @@ for i in range(len(finalQueueOfDatas)):
     event = finalQueueOfDatas.pop(0)
     queueOfEvents.enterData(event)
 
+print("---" * 10)
+
 for i in range(queueOfEvents.lenQueue()):
     event = queueOfEvents.remove()
     print(f"{event} está em execução")
+    print("---" * 10)
     sleep(0.5)
+
+print("FIM DA EXECUÇÃO")
